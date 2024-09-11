@@ -1,0 +1,130 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: midnightblue;
+            color: #fff;
+            text-align: center;
+            padding: 17px;
+        }
+        .topops{
+         display: flex;
+         width:96%;
+         justify-content: space-between;
+         background-color:white;
+ 
+        }
+        section {
+            margin: 20px;
+        }
+
+        .event-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .event-list-item {
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-list-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .event-details {
+            padding: 15px;
+	    background-color: #B0C4DE;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
+    <title>Navaratri Event List</title>
+</head>
+<body>
+    <div>
+	<ul class="topops">
+	<li><a href="proj3.html" class="active">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="events.html">events</a></li>
+	<li><a href="register.html">registration</a></li>
+        <li><a href="quiz.html">take a quiz?</a></li>
+	</ul>
+   </div>
+    <header >
+        <h1>Events to be held!!!</h1>
+    </header>
+    <section>
+        <ul class="event-list">
+            <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Inauguration </h3>
+                    <p>Date: October 11, 2024</p>
+                    <p>Time: 3:00 PM - 4:00 PM</p>
+                </div>
+            </li>
+	    <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Pooja</h3>
+                    <p>Date: October 11, 2024</p>
+                    <p>Time: 4:00 PM - 5:00 PM</p>
+                </div>
+            </li>
+	    <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Distribution of Prasadam </h3>
+                    <p>Date: October 11, 2024</p>
+                    <p>Time: 5:00 PM - 5:30 PM</p>
+                </div>
+            </li>
+	    <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Start of day two!<br>chanting of prayer!</h3>
+                    <p>Date: October 12, 2024</p>
+                    <p>Time: 4:00 PM - 4:30 PM</p>
+                </div>
+            </li>
+            <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Cultural program</h3>
+                    <p>Date: October 12, 2024</p>
+                    <p>Time: 4:30 PM - 6:00 PM</p>
+                </div>
+            </li>
+	    <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Distribution of Prasadam</h3>
+                    <p>Date: October 12, 2024</p>
+                    <p>Time: 6:00 PM - 6:30 PM</p>
+                </div>
+            </li>
+	    <li class="event-list-item">
+                <div class="event-details">
+                    <h3>Garba night!</h3>
+                    <p>Date: October 12, 2024</p>
+                    <p>Time: 6:30 PM - 9:00 PM</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

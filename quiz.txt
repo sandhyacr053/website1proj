@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title>Navaratri Quiz</title>
+    <style>
+.topops{
+  display: flex;
+  width:96%;
+  justify-content: space-between;
+  background-color:white;
+ 
+}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: midnightblue;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div>
+<ul class="topops">
+<li><a href="proj3.html" class="active">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="events.html">events</a></li>
+<li><a href="register.html">registration</a></li>
+<li><a href="quiz.html">take a quiz?</a></li>
+</ul>
+  </div>
+
+    <header>
+        <h1>Navaratri Quiz</h1>
+    </header>
+
+    <section>
+        <div class="quiz-container">
+            <div class="question">1. What is the significance of Navaratri?</div>
+            <ul class="options">
+                <li><input type="radio" name="q1" value="a"> Worship of the goddess Durga</li>
+                <li><input type="radio" name="q1" value="b"> Worship of the goddess Lakshmi</li>
+		<li><input type="radio" name="q1" value="c"> Worship of the goddess Saraswati<li>
+		<li><input type="radio" name="q1" value="d"> Worship of the goddess Ganga</li>
+            </ul>
+
+            <div class="question">2. How many days does Navaratri typically last?</div>
+            <ul class="options">
+                <li><input type="radio" name="q2" value="a"> 14 days</li>
+                <li><input type="radio" name="q2" value="b"> 10 days</li>
+		<li><input type="radio" name="q2" value="c"> 9 days</li>
+		<li><input type="radio" name="q2" value="d"> 8 days</li>
+            </ul>
+	    <div class="question">3. What is the last day of Shardiya Navratri known as?</div>
+            <ul class="options">
+                <li><input type="radio" name="q3" value="a">  Raksha Bandhan</li>
+                <li><input type="radio" name="q3" value="b"> Holi</li>
+		<li><input type="radio" name="q3" value="c"> Diwali</li>
+		<li><input type="radio" name="q3" value="d"> Dussehra</li>
+            </ul>
+            <div class="question">4.  During Shardiya Navratri, devotees often recite a sacred text called __________. </div>
+            <ul class="options">
+                <li><input type="radio" name="q4" value="a"> Ramayan</li>
+                <li><input type="radio" name="q4" value="b"> Bhagavat Geetha</li>
+		<li><input type="radio" name="q4" value="c"> Durga Saptashati</li>
+		<li><input type="radio" name="q4" value="d"> Gayatri mantra</li>
+            </ul>
+            <div class="question">5. What type of dance is traditionally performed during Navratri celebrations?</div>
+            <ul class="options">
+                <li><input type="radio" name="q5" value="a"> Garba</li>
+                <li><input type="radio" name="q5" value="b"> Kathak</li>
+		<li><input type="radio" name="q5" value="c"> odissi</li>
+		<li><input type="radio" name="q5" value="d"> Yakshagana</li>
+            </ul>
+
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </section>
+
+    <script>
+        function submitQuiz() {
+            // Array to store correct answers
+            const correctAnswers = ['a', 'c', 'd', 'c', 'a'];
+
+            // Variables to store user's selected answers and score
+            let userAnswers = [];
+            let score = 0;
+
+            // Get user's selected answers
+            for (let i = 1; i <= correctAnswers.length; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+
+                if (selectedAnswer) {
+                    userAnswers.push(selectedAnswer.value);
+                }
+            }
+
+            // Check user's answers and calculate the score
+            for (let i = 0; i < correctAnswers.length; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            // Display the score
+            alert(`Quiz submitted!\nYour Score: ${score}/${correctAnswers.length}`);
+        }
+    </script>
+
+</body>
+</html> 

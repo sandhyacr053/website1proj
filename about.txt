@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Arial';
+            margin: 0;
+            padding: 0;
+            background-color: #E1EBEE;
+        }
+.topops{
+  display: flex;
+  width:96%;
+  justify-content: space-between;
+  background-color:white;
+ 
+}
+
+        header {
+            background-color: midnightblue;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #CCCCFF;
+            color: black;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<div>
+<ul class="topops">
+<li><a href="proj3.html" class="active">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="events.html">events</a></li>
+<li><a href="register.html">registration</a></li>
+<li><a href="quiz.html">take a quiz?</a></li>
+</ul>
+  </div>
+
+    <header>
+        <h1>About Navaratri Festival</h1>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#history">History</a>
+        <a href="#celebrations">Celebrations</a>
+        <a href="#rituals">Rituals</a>
+    </nav>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>
+            Navaratri is a Hindu festival that spans nine nights and is celebrated in the autumn every year.
+            It is observed for different reasons and celebrated differently in various parts of the Indian
+            subcontinent. The festival is associated with the prominent battle that took place between
+            Goddess Durga and the demon Mahishasura.
+        </p>
+    </section>
+
+    <section id="history">
+        <h2>History</h2>
+        <p>
+            The history of Navaratri can be traced back to ancient mythology and legends. It symbolizes the
+            triumph of good over evil, as the goddess Durga defeated the demon Mahishasura after a fierce
+            battle that lasted for nine nights and ten days.
+        </p>
+    </section>
+
+    <section id="celebrations">
+        <h2>Celebrations</h2>
+        <p>
+            Navaratri is celebrated with great enthusiasm and devotion. People participate in traditional
+            dance forms like Garba and Dandiya, wear colorful traditional attire, and create vibrant
+            decorations. Temples are decorated, and religious ceremonies are performed during this auspicious
+            time.
+        </p>
+    </section>
+
+    <section id="rituals">
+        <h2>Rituals</h2>
+        <p>
+            The festival involves various rituals and customs, including fasting, prayer, and the recitation
+            of religious texts. Devotees visit temples dedicated to Goddess Durga and seek her blessings
+            during this auspicious period.
+        </p>
+    </section>
+
+</body>
+</html>
